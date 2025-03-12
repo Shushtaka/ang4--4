@@ -1,21 +1,47 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Player, User } from '../Models/User';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+
+
       title = "Users"
       showTitle = false
       showUsers = false
+
+      newVar? : string | number ;
+
+
       showData(){
         this.showTitle ?  this.showTitle=false : this.showTitle=true
         this.showUsers? this.showUsers= false : this.showUsers=true
       }
+
+      // string number boolean undefined null object
+    
+    user1 = new User
+    crUser(){
+      // this.user1.name = "John"
+      // this.user1.age = 50
+      console.log(this.user1)
+    }
+
+
+    player1 : Player = {
+      name : "",
+      age : null
+    }
+    crPlayer(){
+      console.log(this.player1)
+    }
 
      users = [
         {
