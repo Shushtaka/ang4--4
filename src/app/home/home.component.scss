@@ -10,6 +10,34 @@
 }
 
 
+table {
+    margin: auto;
+    border-collapse: collapse; 
+
+    th, td {
+        border: 2px solid black;
+        border-radius: 4px;
+        padding: 8px; 
+        text-align: center;
+    }
+
+    th {
+        background-color: #f2f2f2; 
+        font-weight: bold;
+    }
+
+    td {
+        background-color: #fff; 
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
 $myfonrsize: 30px;
 
 .imgCont{
